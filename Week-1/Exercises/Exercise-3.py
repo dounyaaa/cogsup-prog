@@ -18,7 +18,10 @@ Write code that prints the sum of the elements in the following list.
 lst = [1, 4, -6, 7, 2, 3, 9, 11, 6] # In all exercises in this script, you will work with this list
 
 print("Exercise 3.1")
-
+somme=0
+for i in lst:
+  somme+=i
+print(somme)
 pass
 
 print("---")
@@ -30,6 +33,12 @@ Task:
 ------
 Print the product of the elements in the list.
 """
+produit=1
+for i in lst : 
+    produit = produit*i
+print(produit)
+
+print()
 
 print("Exercise 3.2")
 
@@ -46,8 +55,12 @@ Print the sum of the squares of the list.
 """
 
 print("Exercise 3.3")
-
+somme_square=0
+for i in lst:
+  somme_square+=i**2
+print(somme_square)
 pass
+
 
 print("---")
 
@@ -60,7 +73,7 @@ Print the largest element of the list.
 """
 
 print("Exercise 3.4")
-
+print(max(lst))
 pass
 
 print("---")
@@ -72,7 +85,7 @@ Task:
 ------
 Print the largest element of the list.
 """
-
+print(min(lst))
 print("Exercise 3.5")
 
 pass

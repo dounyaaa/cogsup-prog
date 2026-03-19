@@ -16,7 +16,8 @@ Write a for-loop that prints out the following line 20 times:
 """
 
 print("Exercise 2.1")
-
+for i in range(20):
+    print("All work and no play makes Jack a dull boy.")
 pass
 
 print("---")
@@ -27,9 +28,9 @@ Task:
 ------
 Write a for-loop that prints out the numbers from 0 up to 5 inclusive.
 """
-
 print("Exercise 2.2")
-
+for i in range(6):
+    print(i)
 pass
 
 print("---")
@@ -44,6 +45,8 @@ Write a for-loop that prints out the EVEN numbers from 2 up to 8 inclusive.
 """
 
 print("Exercise 2.3")
+for i in range(2, 9, 2):
+    print(i)
 
 pass
 
@@ -56,6 +59,8 @@ Task:
 ------
 Now write another loop to print 9 through 0 (i.e., backwards).
 """
+for i in range (9, -1, -1):
+  print(i)
 
 print("Exercise 2.4")
 
@@ -81,6 +86,8 @@ Write code that prints out the following sequence:
 
 print("Exercise 2.5")
 
+for i in range(1,9, 1):
+    print('z'*i)
 pass
 
 print("---")
@@ -103,6 +110,11 @@ which is why the script moves automatically to a new line after the execution
 of a simple print-statement.
 ------
 """
+
+for i in range(1, 6):
+    for j in range(1, i + 1):
+        print(j, end = '')
+    print()
 
 print("Exercise 2.6")
 
@@ -135,6 +147,9 @@ your code needs to carry out for a certain value of rows.
 print("Exercise 2.7")
 
 rows = 5
+for i in range(rows) : 
+    print(' '*(rows-i-1) + 'o'*(2*i-1)+' '*(rows-i-1))
+    
 pass
 
 print("---")
@@ -159,10 +174,13 @@ Write code that prints the multiplication table:
 Hint: One of the two links at the top of this script contains helpful information
 on how to align the numbers.
 ------
-"""
-
+"""   
+        
 print("Exercise 2.8")
-
+for i in range (1, 11):
+    for j in range(1, 11):
+        print('{:4d}'.format(i*j), end = '')
+    print('') 
 pass
 
 print("---")

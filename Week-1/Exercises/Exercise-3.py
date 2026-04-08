@@ -33,15 +33,14 @@ Task:
 ------
 Print the product of the elements in the list.
 """
+
+print("Exercise 3.2")
 produit=1
 for i in lst : 
     produit = produit*i
 print(produit)
 
 print()
-
-print("Exercise 3.2")
-
 pass
 
 print("---")
